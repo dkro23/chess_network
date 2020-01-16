@@ -51,3 +51,6 @@ plot(chess_network,mode="circle")
 
 ggraph(chess_network) + geom_node_text(label=chess_node_list$value,size=5,repel = T) + geom_node_point(size=3) +
   geom_edge_link() +  geom_edge_link(arrow = arrow(length = unit(6, 'mm')), end_cap = circle(3, 'mm')) 
+
+ggraph(chess_network,layout = "kk") + geom_node_text(label=chess_node_list$value,size=5,repel = T) + geom_node_point(size=3) +
+  geom_edge_link() +  geom_edge_link(arrow = arrow(length = unit(4, 'mm')), end_cap = circle(3, 'mm'))
